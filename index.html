@@ -4,13 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>XBit Labs - Image Portfolio</title>
 </head>
 <body>
-  <div class="portfolio-container" id="portfolio">
-    <!-- Images will be added here dynamically -->
+  <div class="w3-bar w3-black">
+
+    <span class="w3-bar-item w3-mobile w3-hover-red">  <img src="images/Xbitlabs_logo.png" width=40 height=40/>Bit Labs</span>
+    <span class="w3-right">
+    <a href="#Home" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
+    <a href="#About" class="w3-bar-item w3-button w3-mobile w3-hover-red">About</a>
+    <a href="#Tutorials" class="w3-bar-item w3-button w3-mobile w3-hover-red">Tutorials</a>
+    <a href="#Services" class="w3-bar-item w3-button w3-mobile w3-hover-red">Services</a>
+    <a href="#Blog" class="w3-bar-item w3-button w3-mobile w3-hover-red">Blog</a>
+    <a href="#Contact Us" class="w3-bar-item w3-button w3-mobile w3-hover-red">Contact Us</a>
+  </span>
+</div>
+<!--  <div class="portfolio-container" id="portfolio">
+    <!-- Images will be added here dynamically
+  </div>-->
+   <script src="script.js"></script>
+<section class="showcase">
+  <div class="w3-container w3-center ">
+    <h1 class="w3-text-shadow w3-animate-opacity"> World's largest E-Learning Platform</h1>
+    <p> Learn More</p>
+    <button class="w3-button w3-red w3-large w3-opacity"> Start Here</button>
   </div>
-  <script src="script.js"></script>
+</section>
+<section class="section w3-red w3-hover-opacity">
+  <div class="w3-container w3-center">
+    <i class="fa fa-home"></i>
+    <h2> Welcome Home</h2>
+    <p> Become a programming expert - "Enquire now"
+        Get additional discount of upto 50% : 22h 48m 10s . Register soon using referral id: LABX55 Course registration form
+</section>
+</p>
+</div>
+</section>
+<section class="section w3-light-grey w3-hover-opacity">
+  <div class="w3-container w3-center">
+    <i class="fa fa-cog"></i>
+    <h2> About Us</h2>
+  <p>
+    We are dedicated to providing comprehensive software training for individuals seeking to enhance their skills and knowledge in various areas of software development and technology.
+    Our institute offers a wide range of tutorials and courses, covering topics such as:
+    UI/UX
+    Web Development
+    Web Design
+    And more...
+    With our experienced instructors and cutting-edge resources, we strive to empower learners to stay ahead in the rapidly evolving tech industry.
+    Join us on this educational journey and unlock your full potential in the world of software development.
+    Students (Any stream ) can join us by filling up this form Course Registration Link
+</p>
+</div>
+</section>
+<section class="section ">
+  <div class="w3-container">
+  <div class="w3-row-padding">
+    <div class="w3-col m5">
+      <img src="images/img2.jpg"/>
+    </div>
+    <div class="w3-col m7">
+    <button onclick="accFunction('what')" class="w3-button w3-block w3-left-align">
+     Course Structure</button>
+
+<div id="what" class="w3-container w3-hide">
+  <h2>Course Details</h2>
+</div>
+</div>
+  </div>
+</div>
+</section>
+<script>
+function accFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 </body>
 <footer>
   &copy; Powered by <a href="http://xbitlabs.in"> xbitlabs.in</a>
